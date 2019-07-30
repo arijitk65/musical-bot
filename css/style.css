@@ -1,0 +1,589 @@
+@font-face {
+  font-family: Futura Koyu;
+  src: url(Futura_Koyu.ttf);
+}
+
+@font-face {
+  font-family: Alegre Sans;
+  src: url(Alegre_Sans.ttf);
+}
+
+@font-face {
+  font-family: Hansief;
+  src: url(Hansief.otf);
+}
+html {
+  width:100%;
+  height:100%;
+  margin:0;
+  font-family:'Futura Koyu';
+}
+
+body {
+  width:100%;
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  font-family:'Futura Koyu';
+  font-weight: bold;  
+}
+
+
+.container {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 20%;
+  display: block;
+  position: fixed;
+}
+
+.topleft {
+    top: 12px;
+    left: 3px;
+    width: 150px;
+    height: 40px;
+    border: 1px;
+  }
+  
+.head-text {
+  color: white;
+  padding-top: 25px;
+  text-align: center;
+}
+.head-text h1 {
+  font-size: 28px;
+}
+
+.topright {
+  top: 12px;
+  right: 3px;
+  width: 130px;
+  height: 60px;
+  border: 1px;
+}
+.form-section {
+  width: 100%;
+  height: 80px;
+  margin-top: 80px;
+}
+
+/*  Button with shaking property  */
+
+.btn-shaking {
+  background: black;
+  border: 1px dashed grey;
+  font-size: 20px;
+  padding: 10px 20px;
+  position: relative;
+  animation-name: shake;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  cursor: pointer;
+  
+}
+.btn-shaking:hover {
+  background: #EEEEEE;
+  animation-name: shakeAnim;
+}
+
+@keyframes shakeAnim {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
+}
+
+@keyframes shake {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
+}
+
+
+.img-center {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.offbeat_yellow_logo {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.button-section {
+  margin-top: 0px;
+  width: 100%;
+
+}
+
+.fl-rt {
+  float: right;
+}
+
+.fl-lf {
+  float: left;
+}
+
+
+/* GENERAL BUTTON STYLING */
+
+
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  background: #F58C2F;
+  border: 0px solid #F58C2F;
+  border-radius: 10px;
+  color: black;
+  display: block;
+  width: 143px;
+  height: 57px;
+  font-family: Hansief;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px auto;
+  padding: 1px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+button::before,
+button::after {
+  background: #ffd280;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border: none;
+}
+
+button:hover {
+  background: #F3A158;
+  color: black;
+}
+
+/* BUTTON 1 */
+.btn-1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-1:hover:after {
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* BUTTON 2 */
+.btn-2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-2:hover:after {
+  width: 100%;
+  border-radius: 15px;
+}
+
+
+.blur   {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+/* The popup chat - hidden by default */
+
+#myForm  {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+   /* overflow-y: scroll; */
+    background: linear-gradient(45deg,  transparent 0%, transparent 57%, #73C6B6 100%),
+                linear-gradient(-45deg, #1F618D 0%,  #45B39D 0.3%, #3498DB 112%,  transparent 11% ),
+                linear-gradient(-90deg, #2980B9 100%, #2980B9 65%, transparent 20% );
+}
+
+
+
+.form-container {
+  align: center;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 95%;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*  linear-gradient(45deg,  transparent 0%, transparent 57%, #221D1D 100%),
+  linear-gradient(-45deg, #221D1D 0%,  #221D1D 0.3%, #D2CF25 112%,  transparent 11% ),
+  linear-gradient(-90deg, #221D1D 100%, #221D1D 65%, transparent 20% );
+*/
+
+
+
+.form-top {
+  width: 100%;
+  height: 70px;
+  background: #17202A;
+  border-radius: 20px 20px 0 0; 
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+
+.form-heading {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+  color: white;
+}
+
+.btn {
+  position: relative;
+  right: 10px;
+  bottom: 20px;
+  color: black;
+  width: 25px;
+  height: 27px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  margin: auto;
+  padding: 20px;
+  background: rgba(0,0,0,1);
+}
+
+.btn:hover {
+  color: black;
+  font-size: 1.8em;
+  background: transparent;
+  padding: 1px;
+}
+
+.form-container .response {
+  background: #EAECEE;
+  width: 100%;
+  height: 70%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+.form-container .response::-webkit-scrollbar {
+  width: 10px;
+  color: white;
+}
+
+.form-container .response::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: black;
+}
+
+.bot  {
+  margin: 10px;
+  font-family:'Futura Koyu';
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  background: black;
+  border: 3px solid #F58C2F;
+  color: white;
+  border-radius: 20px 20px 20px 0;
+  -webkit-border-radius:  20px 20px 20px 0;
+  -moz-border-radius: 20px 20px 20px 0;
+}
+
+
+.tri-right.border.btm-left:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -8px;
+  right: auto;
+  top: auto;
+  bottom: -40px;
+  padding: 10px;
+  border: 32px solid #F58C2F;
+  border-color: transparent transparent transparent black;
+}
+.tri-right.btm-left:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  right: auto;
+  top: auto;
+  bottom: -20px;
+  padding: 10px;
+  border: 20px solid #F58C2F;
+  border-color: transparent transparent transparent #F58C2F;
+}
+.round{
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+
+}
+
+.user {
+  margin: 10px;
+  font-family:'Futura Koyu';
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  float: right;
+  background-color: #F58C2F;
+  color: black;
+  border: 3px solid black;
+  border-radius: 20px 20px 0 20px;
+  -webkit-border-radius:  20px 20px 0 20px;
+  -moz-border-radius: 20px 20px 0 20px;
+}
+
+.tri-right.btm-right:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 0;
+  bottom: -20px;
+  border: 22px solid;
+  border-color: #F58C2F #F58C2F transparent transparent;
+}
+.tri-right.btm-right:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 10px;
+  bottom: -10px;
+  border: 12px solid;
+  border-color: #F58C2F #F58C2F transparent transparent;
+}
+
+.quickButton {
+  display: block;
+  width: 180px;
+  height: auto;
+  float: left;
+  padding:10px;
+  background: #F58C2F;
+  color: black;
+  border-radius: 10px;
+  font-family: Futura Koyu;
+  font-size: 12px;
+  border: 1px solid #FFA352;
+  margin-left: 30px;
+}
+
+.quickButton:hover {
+  background-color: rgba(245, 140, 47, .7);
+  color: black;
+}
+
+
+/*Inpur area*/
+.form-container .input {
+  width: 100%;
+  height: 40px;
+  font-family:'Futura Koyu';
+  border-radius: 0 0 10px 10px;
+  border: 0px;
+  background: black;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+.form-container .input:focus {
+  outline: none;
+  color: white;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+.form-container .btn:hover {
+  
+  opacity: 1;
+  
+}
+
+
+/*CSS for chatbot */
+{box-sizing: border-box;}
+
+
+
+
+ .btn-rec {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  font-family: Futura Koyu;
+  font-size: 15px; 
+  background: #F4D03F;
+  color: black;
+  border: 1px solid #D6DBDF;
+}
+
+.btn-rec:hover {
+  border: 1px solid white;
+  background: #F7DC6F;
+
+}
+.pulse-ring {
+  content: '';
+  width: 85px;
+  height: 85px;
+  border: 5px solid #F58C2F;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  bottom: 2px;
+  left: -2px;
+
+  animation: pulsate infinite 2s;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: .8;
+  }
+  100% {
+    -webkit-transform: scale(1.4, 1.3);
+    opacity: 0;
+  }
+}
+
+
+/*    Animated Voice Button */
+
+
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+.wrapper
+{ 
+  padding: 20px;     
+} 
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+.myFrame {
+  position: fixed;
+  display: none;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(230, 230, 230,.3);
+  overflow-y: hidden;
+  z-index: 1;
+}
+
+.frame {
+  align: center;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: white;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .form-container {
+    align: center;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
