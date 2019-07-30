@@ -1,7 +1,7 @@
 var accessToken = "1334a46118214cc2a2170fd6923ec722";
     var baseUrl = "https://api.dialogflow.com/v1/";
     $(document).ready(function() {
-      setResponse("Hey there! How can I help you?");
+      setResponse("Hey there! Do you like music?");
       $("#input").keypress(function(event) {
         if (event.which == 13) {
           event.preventDefault();
@@ -13,71 +13,6 @@ var accessToken = "1334a46118214cc2a2170fd6923ec722";
         switchRecognition();
       });
 
-
-     
-      $("#btn01").click(function(event) 
-      {
-        setResponse("I'm here to give you answers related to Certifications. What do you want to know?");
-        setButton("Certification Courses");
-      });
-      $("#btn02").click(function(event) 
-      {
-        setResponse('Looking for Rental Space for one day event?"'); 
-        setButton("Classroom");
-      });
-      $("#btn03").click(function(event) 
-      {
-        setResponse("Looking for Office Space? Tell me how can I help."); 
-        setButton("Office price");
-      });
-      $("#btn04").click(function(event) 
-      {
-        setResponse("Hello! Welcome to OFFBEAT Gym. How can I help?"); 
-        setButton("Gym Price");
-        setButton("Are you real?");
-      });
-      $("#btn05").click(function(event) 
-      {
-        setResponse("Seeking information?"); 
-      });
-      $("#btn06").click(function(event) 
-      {
-        setResponse("Looking for a stay Hooman? You can ask me questions like 'What is the price of bunker?' || 'What is the price of private room?' "); 
-        setButton("Bunker Price");
-        setButton("Where do you live?");
-      });
-      $("#btn07").click(function(event) 
-      {
-        setResponse('We offer various Fitness & Lifestyle. Which fitness program are you interested in?');
-        setButton("Fitness Courses List");
-      });
-      $("#btn08").click(function(event) 
-      {
-        setResponse('Hi Hooman! To know about TopCat you may either ask/type a question or press Quick Button. Example questions "What are the rental charges of TopCat?" || "What are the services offered by TopCat?" '); 
-        setButton("Services at Topcat");
-        setButton("Talk to me");
-      });
-      $("#btn09").click(function(event) 
-      {
-        setResponse('Do not panic Hooman! Press a Quick Button. I am here to help you!'); 
-        setButton("Call Police");
-        setButton("Call Ambulance");
-        setButton("Call Fire Brigade");    
-      });
-      $("#btn10").click(function(event) 
-      {
-        setResponse("Momo-I-AM is here for you. Tell me what do you want to know?");     
-        setButton("Menu");
-        setButton("Details");
-      });
-      $("#btn11").click(function(event) 
-      {
-        setResponse('HELLO! This is button 11');
-      });
-
-    });
-
-// Contact Details : KOLKATA KNOWLEDGE CAMPUS 124 B L Saha Road, Kolkata 700 053 Phone/Fax: +91 33 2403 2300/01 DURGAPUR KNOWLEDGE CAMPUS Arrah, Shibtala Via Muchipara, Durgapur 713 212 Phone/Fax: +91 343 253 3813-15
 
 /*    var isAndroid = /(android)/i.test(navigator.userAgent);
     console.log("android Testing: "+isAndroid);
@@ -171,7 +106,7 @@ var accessToken = "1334a46118214cc2a2170fd6923ec722";
       //setResponse("Thinking...");
     }
     function setResponse(val) {
-            $('.response').append('<span class="bot btm-left">' + '<b>Bot:</b> '+ val + '</span>\r\n');
+            $('.response').append('<span class="bot btm-left">' + '<b>ML:</b> '+ val + '</span>\r\n');
             //conversation.push("AI: " + val + '\r\n<br><br>');
      // $("#response").text(conversation.join(""));
     }
