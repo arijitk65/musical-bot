@@ -14,6 +14,25 @@ var accessToken = "1334a46118214cc2a2170fd6923ec722";
       });
 
 
+     
+      $("#btn01").click(function(event) 
+      {
+        setResponse("");
+        setButton("");
+      });
+      $("#btn02").click(function(event) 
+      {
+        setResponse(''); 
+        setButton("");
+      });
+      $("#btn03").click(function(event) 
+      {
+        setResponse(""); 
+        setButton("");
+      });
+
+    });
+
 /*    var isAndroid = /(android)/i.test(navigator.userAgent);
     console.log("android Testing: "+isAndroid);
       if(!isAndroid)
