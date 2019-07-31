@@ -577,9 +577,14 @@ button:hover {
     margin: 0 auto;
     margin-top: 0;
     margin-bottom: 1px;
-    border-radius: 0px;
   }
 
+  .form-top {
+    border-radius: 0px;
+    height: 50px;
+    margin: auto;
+    padding: auto;
+  }
   .quickButton {
     font-size: 8px;
     width: 100px;
