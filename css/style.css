@@ -566,7 +566,7 @@ button:hover {
 
   body {
     font-family: Alegre Sans;
-    font-size: 10px;
+    font-size: 13px !important;
   }
   .form-container {
     align: center;
@@ -575,8 +575,14 @@ button:hover {
     width: 100%;
     height: 85%;
     margin: 0 auto;
-    margin-top: 1px;
+    margin-top: 0;
     margin-bottom: 1px;
+    border-radius: 0px;
+  }
+
+  .quickButton {
+    font-size: 8px;
+    width: 100px;
   }
 }
 
