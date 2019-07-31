@@ -565,6 +565,7 @@ button:hover {
 @media only screen and (max-width: 800px) {
 
   body {
+    font-family: Alegre Sans;
     font-size: 20px;
   }
   .form-container {
