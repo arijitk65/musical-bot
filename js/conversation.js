@@ -1,9 +1,9 @@
 var accessToken = "1334a46118214cc2a2170fd6923ec722";
     var baseUrl = "https://api.dialogflow.com/v1/";
     $(document).ready(function() {
-      setResponse("Hey there! Do you love music?");
-      setButton('Yes');
-      setButton('No');
+      setResponse("Hi there! Welcome to the world of music. Are you a fan?");
+      setButton('Fan');
+      setButton('Not a Fan');
       $("#input").keypress(function(event) {
         if (event.which == 13) {
           event.preventDefault();
