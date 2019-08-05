@@ -115,7 +115,7 @@ var accessToken = "1334a46118214cc2a2170fd6923ec722";
                   var respText = data.result.fulfillment.speech;
                   console.log("Respuesta: " + respText);
                   setResponse(respText);
-                  responsiveVoice.speak(respText,"Hindi Female");
+                  responsiveVoice.speak(respText,"English Female");
                   $("#response").stop().animate({ scrollTop: $("#response")[0].scrollHeight}, 1000);
                 //  $("#response").scrollTop($("#response").height());
         },
